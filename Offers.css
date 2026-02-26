@@ -1,0 +1,126 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: beige;
+}
+
+.offers{
+    display: flex;
+    justify-content: center;
+    color: #a6051a;
+    font-family: cursive;
+}
+
+.hori {
+    border: none;
+    height: 3px;
+    background-color: #0166b1;
+    width: 80%;
+    margin: 30px auto;
+}
+
+.offers-section {
+  padding: 40px;
+  text-align: center;
+}
+
+.offers-section h2 {
+  color: rebeccapurple;
+}
+
+.subtitle {
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.offers-container {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.offer-card {
+  background-color: #1c1c1c;
+  color: white;
+  padding: 20px;
+  width: 230px;
+  border-radius: 10px;
+}
+
+.offer-card h3 {
+  color: #FCE903;
+  margin-bottom: 10px;
+}
+
+.offer-card p {
+  color: #cccccc;
+}
+
+.offer-card span {
+  display: block;
+  margin-top: 8px;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.copyright {
+  text-align: center;
+  margin: 40px 0 20px;
+  font-size: 13px;
+  color: #666;
+}
+
+.Explore {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 15px;
+  
+}
+
+.Explore a {
+  color: #134ca9;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.Explore a:hover{
+  color: rgb(132, 22, 163);
+}
+
+
+/* Media Query */
+@media (max-width: 750px) {
+
+  
+  .navbar,
+  .Explore {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .navbar a,
+  .Explore a {
+    font-size: 16px;
+  }
+
+ 
+  .parks-container,
+  .offers-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .park-card,
+  .offer-card {
+    width: 90%;
+  }
+
+
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+}

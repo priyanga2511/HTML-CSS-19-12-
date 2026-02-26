@@ -1,0 +1,190 @@
+body {
+    margin: 0;
+    background-color: #a6051a;
+
+}
+
+.head {
+    text-align: center;
+    padding: 20px;
+    color: #FCE903;
+    font-family: cursive;
+}
+
+.hori {
+    border: none;
+    height: 3px;
+    background-color: #0166b1;
+    width: 80%;
+    margin: auto;
+}
+
+.marquee {
+    margin: 14px;
+    color: bisque;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.navbar a {
+    color: black;
+    font-weight: bolder;
+    font-size: 25px;
+    text-decoration: none;
+    animation: float 3s ease-in-out infinite;
+}
+.navbar a:hover {
+    color: #0166b1;
+    background-color:  #E23744;
+}
+
+.image{
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+    gap: 25px;
+    
+}
+.image img{
+    width: 310px;
+    height: 175px;
+    border-radius: 10px;
+    
+   
+}
+
+.footer {
+  background-color: #1c1c1c;   
+  color: #ffffff;
+  padding: 40px 20px 20px;
+  margin-top: 20px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-section h3,
+.footer-section h4 {
+  color: #FCE903;   
+  margin-bottom: 10px;
+}
+
+.footer-section p,
+.footer-section a {
+  color: #cccccc;
+  font-size: 14px;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.footer-section a:hover {
+  color: #ffffff;
+}
+
+.footer p {
+  text-align: center;
+  font-size: 13px;
+  color: #aaaaaa;
+}
+
+/* Media Query */
+@media (max-width: 750px) {
+
+  
+  .navbar,
+  .Explore {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .navbar a,
+  .Explore a {
+    font-size: 16px;
+  }
+
+ 
+  .parks-container,
+  .offers-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .park-card,
+  .offer-card {
+    width: 90%;
+  }
+
+
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+
+/* 🌙 Dark Mode Button */
+.dark-toggle {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #1c1c1c;
+  color: white;
+  font-size: 16px;
+}
+
+/* 🌙 DARK MODE STYLES */
+body.dark {
+  background-color: #121212;
+  color: #f5f5f5;
+}
+
+body.dark .navbar,
+body.dark .Explore {
+  background-color: #1c1c1c;
+}
+
+body.dark .park-card,
+body.dark .offer-card,
+body.dark .contact-info {
+  background-color: #222222;
+}
+
+body.dark a {
+  color: #f5f5f5;
+}
+
+body.dark .footer {
+  background-color: #000000;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
